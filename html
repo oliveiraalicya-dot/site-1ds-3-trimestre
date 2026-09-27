@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu blog</title>
+    <style>
+        header {
+            background-color: #ACE6E4;
+            color: black;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto; 
+            padding: 16px;
+        }
+
+        main {
+            background-color: #9bf3f0;
+            color: black;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        button {
+            background: transparent;
+            border: 1px solid #333;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GENSHIN IMPACT</h1>
+        <p>LORE E TEORIAS</p>
+    </header>
+
+    <main>
+        <img src="images.jpeg" alt="Ilustração digital promocional do jogo Genshin Impact. Em primeiro plano, no lado esquerdo, a personagem Arlecchino se destaca com cabelos curtos brancos com mechas pretas, olhos vermelhos marcantes e trajes elegantes em preto e branco com detalhes vermelhos. Ela estende uma mão com luva preta em direção ao espectador. Ao fundo, à direita, estão os personagens Freminet, Lyney e Lynette. O fundo retrata uma estrutura subterrânea em tons de azul-escuro com cascatas de água.">
+        <h2>LUMINE</h2>
+        <p>A LORE INTEIRA DE GENSHIN</p>
+        <p>por: alicya eloise</p>
+        
+        <button type="button">
+            😉 <span id="contador">0</span>
+        </button>
+    </main>
+
+    <script>
+        const botao = document.querySelector("button");
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("#contador");
+            texto.textContent = Number(texto.textContent) + 1;
+        }
+    </script>
+</body>
+</html>
